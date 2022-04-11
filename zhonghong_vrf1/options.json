@@ -1,0 +1,7 @@
+{
+  "broker": "192.168.124.198",
+  "port": 1883,
+  "username": "mqtt",
+  "password": "mqtt",
+  "gateway": "192.168.124.8"
+}

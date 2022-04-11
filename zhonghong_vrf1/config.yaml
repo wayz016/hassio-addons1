@@ -1,0 +1,25 @@
+name: "Zhonghong VRF1"
+version: "0.1.0"
+slug: "zhonghong_vrf1"
+description: "HTTP based Zhonghong vrf controller"
+url: "https://github.com/wayz016/hassio-addons1/tree/main/zhonghong_vrf"
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+boot: auto
+#image: xswxm/{arch}-addon-zhonghong_vrf
+options:
+  broker: "192.168.124.198"
+  port: "1883"
+  username: "mqtt"
+  password: "mqtt"
+  gateway: "192.168.124.8"
+schema:
+  broker: str
+  port: str
+  username: str
+  password: str
+  gateway: str
