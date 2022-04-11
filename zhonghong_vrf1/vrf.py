@@ -112,7 +112,7 @@ def get_acs():
                 break
         except Exception as e: 
             r = str(e)
-            if "('Connection aborted.', BadStatusLine('" in r:
+            if "'" in r:
                 msg = json.loads(r[39:-3])
                 if msg['err'] == 0 and len(msg['unit']) > 0:
                     for m in msg['unit']:
